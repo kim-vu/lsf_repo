@@ -1,0 +1,147 @@
+/* set columns */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+/* add dimensions to cells and stack left to right */
+[class*="col-"]{
+    float: left;
+    padding: 15px;
+    border: none;
+}
+
+/* include margins and padding in overall size */
+* {
+    box-sizing: border-box;
+}
+
+/* insert blank space after headers and rows, clear both sides so no floating objects can surround columns, display like a table element */
+.header::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* MAIN STYLES */
+.header {
+    background-color: rgba(0, 0, 0, .9);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    font-family: "broadsheet", serif;
+    font-size: 17pt;
+    text-transform: uppercase;
+}
+body {
+    font-family: "chaparral-pro-caption", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+}
+#lsf-logo {
+    width: 70%;
+    max-width: 225px;
+    display: block;
+    margin: auto;
+}
+li{
+    list-style-type: none;
+}
+.nav-1 {
+    color: rgba(156, 128, 47);
+    text-decoration: overline;
+    line-height: 1.75em;
+}
+.nav-2 {
+    text-align: right;
+    list-style-type: none;
+}
+
+/* MAIN CAROUSEL */
+.carousel {
+}
+.slides {
+    display: none;
+}
+.prev, .next {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 15px;
+    margin: 0 1%;
+    cursor: pointer;
+    transition: 0.6s;
+    position: absolute;
+    top: 50%;
+    user-select: none;
+    border-radius: 5px;
+    background-color: rgba(156, 128, 47, 0.5);
+}
+.next {
+    right: 0;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(156, 128, 47);
+}
+.text {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 15px;
+    padding: 1% 5%;
+    width: 100%;
+    text-align: left;
+    position: absolute;
+    bottom: 10%;
+}
+.dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 10px 5px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s;
+}
+    
+.active, .dot:hover {
+    background-color: rgba(156, 128, 47);
+}
+        
+/* fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 5s;
+    animation-name: fade;
+    animation-duration: 5s;
+}
+@-webkit-keyframes fade{
+    from (opacity: .8)
+    to {opacity: 1}
+}
+@keyframes fade {
+    from {opacity: .8}
+    to {opacity: 1}
+}
+
+/* ARTICLES */
+#narrative{
+}
+article {
+    margin: 1% 5%;
+}
