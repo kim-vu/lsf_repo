@@ -14,7 +14,7 @@
         <ul>
             <li><a class="nav-1" href="/honey">Honey</a></li>
             <li><a class="nav-1" href="/markets">Markets</a></li>
-            <li><a class="nav-1" href="/recipes">Recipes</a></li>
+            <li><a class="nav-1" href="/digest">Digest</a></li>
             <li><a class="nav-1"href="/about">About</a></li>
         </ul>
     </nav>

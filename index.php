@@ -72,16 +72,10 @@
             <p>We recommend consuming anywhere between a teaspoon and a tablespoon of raw wildflower honey every day for about a month before noticing results. The amount necessary is dependent on each individual's body, and should really be played by ear. One can start small and increase, but maybe not experience early relief and must experiment with the timing of increased dosages. One can start big and wean off, and risk eating more than is necessary. There is, of course, a sweet spot, when it comes to honey, and luckily a <a href="recipes.html">plethora of ways to consume it</a>.</p> 
         </section>
     </article>
+    <?php
+        include 'footer.php'
+    ?>
     
-    <!-- PAGE FOOTER -->
-    <footer>
-        <ul>
-            <li><a href="honey.html">Honey</a></li>
-            <li><a href="markets.html">Markets</a></li>
-            <li><a href="recipes.html">Recipes</a></li>
-            <li><a href="about.html">About</a></li>
-        </ul>
-    </footer>
 <script>
     var i;
     var slides = document.getElementsByClassName("slides");
