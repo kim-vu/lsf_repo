@@ -9,27 +9,9 @@
 </head>
 
 <body>
-    <!-- PAGE HEADER AND NAV BAR -->
-    <div class="header">
-    <nav class="col-4" role="navigation">
-        <ul id="nav-bar">
-            <li><a class="nav-1" href="/honey">Honey</a></li>
-            <li><a class="nav-1" href="/markets">Markets</a></li>
-            <li><a class="nav-1" href="/recipes">Recipes</a></li>
-            <li><a class="nav-1"href="/about">About</a></li>
-        </ul>
-    </nav>
-    
-    <!-- PAGE TITLE & LOGO -->
-    <div class="col-4"><a href="/"><img src="icons/lonestar%20specialty%20foods%20logo.png" alt="Lonestar Specialty Foods" id="lsf-logo"></a></div>
-    
-    <!-- SECONDARY NAV (SOCIAL AND CART) -->
-    <nav class="nav-2 col-4" role="navigation">
-        <a href="facebook.com/lonestarspecialtyfoods"><img src="icons/LSF%20FB%20Logo%20Black%20100.png" alt="Lonestar Specialty Foods Facebook Page" width="15%"></a>
-        <a href="instagram.com/lonestarspecialtyfoods"><img src="icons/LSF%20IG%20Logo%20Black.png" alt="Lonestar Specialty Foods Instagram Page" width="15%"></a>
-        <a href="cart.html">Cart</a>
-    </nav>
-    </div>
+    <?php
+        include 'header.php';
+    ?>
     <!-- IMAGE CAROUSEL -->
     <main role="main" class="carousel row">
         <div class="slides fade">
