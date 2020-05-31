@@ -34,6 +34,6 @@
     </nav>
     </div>
     <!-- PRODUCTS -->
-    
+    <?php echo "get 2 work" ?>
     </body>
 </html>
