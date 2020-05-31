@@ -9,27 +9,9 @@
 </head>
 
 <body>
-    <!-- PAGE HEADER AND NAV BAR -->
-    <div class="header">
-    <nav class="col-4" role="navigation">
-        <ul id="nav-bar">
-            <li><a class="nav-1" href="/honey">Honey</a></li>
-            <li><a class="nav-1" href="/markets">Markets</a></li>
-            <li><a class="nav-1" href="/recipes">Recipes</a></li>
-            <li><a class="nav-1"href="/about">About</a></li>
-        </ul>
-    </nav>
-    
-    <!-- PAGE TITLE & LOGO -->
-    <div class="col-4"><a href="/"><img src="icons/lonestar%20specialty%20foods%20logo.png" alt="Lonestar Specialty Foods" id="lsf-logo"></a></div>
-    
-    <!-- SECONDARY NAV (SOCIAL AND CART) -->
-    <nav class="nav-2 col-4" role="navigation">
-        <a href="facebook.com/lonestarspecialtyfoods"><img src="icons/LSF%20FB%20Logo%20Black%20100.png" alt="Lonestar Specialty Foods Facebook Page" width="15%"></a>
-        <a href="instagram.com/lonestarspecialtyfoods"><img src="icons/LSF%20IG%20Logo%20Black.png" alt="Lonestar Specialty Foods Instagram Page" width="15%"></a>
-        <a href="cart.html">Cart</a>
-    </nav>
-    </div>
+    <?php
+        include 'header.php';
+    ?>
     <!-- IMAGE CAROUSEL -->
     <main role="main" class="carousel row">
         <div class="slides fade">
@@ -90,16 +72,10 @@
             <p>We recommend consuming anywhere between a teaspoon and a tablespoon of raw wildflower honey every day for about a month before noticing results. The amount necessary is dependent on each individual's body, and should really be played by ear. One can start small and increase, but maybe not experience early relief and must experiment with the timing of increased dosages. One can start big and wean off, and risk eating more than is necessary. There is, of course, a sweet spot, when it comes to honey, and luckily a <a href="recipes.html">plethora of ways to consume it</a>.</p> 
         </section>
     </article>
+    <?php
+        include 'footer.php'
+    ?>
     
-    <!-- PAGE FOOTER -->
-    <footer>
-        <ul>
-            <li><a href="honey.html">Honey</a></li>
-            <li><a href="markets.html">Markets</a></li>
-            <li><a href="recipes.html">Recipes</a></li>
-            <li><a href="about.html">About</a></li>
-        </ul>
-    </footer>
 <script>
     var i;
     var slides = document.getElementsByClassName("slides");
